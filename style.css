@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: gray !important;
+    background-color: #36393f !important;
 }
 
 .formulaire {
@@ -24,3 +24,26 @@ body {
 .submit {
     width: 100%;
 }
+
+table{
+    
+    color: whitesmoke;
+    border-collapse: collapse;
+    width: 50em;
+    margin: auto;
+    margin-top: 10em;
+  
+  }
+  
+  table td, table th {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  
+  }
+  
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
