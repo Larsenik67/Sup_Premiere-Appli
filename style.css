@@ -18,11 +18,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border: 20px solid blue;
 }
 
+#retour {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
 .submit {
-    width: 100%;
+    width: 350px;
 }
 
 table{

@@ -31,9 +31,10 @@
                             <input type="number" name="qtt" value="1">
                         </label>
                     </p>
-                    <p>
-                        <input class="my-1, submit" type="submit" name="submit" value="Ajouter le produit">
-                    </p>
+                    <input class="my-1 submit" type="submit" name="submit" value="Ajouter le produit">
+                </form>
+                <form action="recap.php" method="post">
+                    <input class="my-1 submit" type="submit" name="submit" value="Aller au récapitulatif">
                 </form>
             </div>
         </div>

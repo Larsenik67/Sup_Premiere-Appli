@@ -47,5 +47,10 @@
 
         }
     ?>
+    <div id="retour" class="my-1">
+        <form action="index.php" method="post">
+            <input class="my-1 submit" type="submit" name="submit" value="Ajouter des produits">
+        </form>
+    </div>
 </body>
 </html>
