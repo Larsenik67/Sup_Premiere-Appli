@@ -18,6 +18,14 @@
 
             $_SESSION['products'][] = $product;
 
+            $_SESSION["msg-produit"] = "Le produit a été crée";
+            $_SESSION["msg-type"] = "success";
+            header("location:index.php");
+
+        } else {
+            $_SESSION["msg-produit"] = "Une erreur est survenue";
+            $_SESSION["msg-type"] = "danger";
+            header("location:index.php");
         }
 
     }
