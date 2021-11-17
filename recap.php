@@ -36,12 +36,12 @@
                     "<td>".$index."</td>",
                     "<td>".$product['name']."</td>",
                     "<td>".number_format($product['price'], 2, ",", "&nbsp;")."&nbsp;€</td>",
-                    "<td><a href='traitement.php?order=inc&index=$index'>+</a>".$product['qtt']."<a href='traitement.php?order=dec&index=$index'>-</a></td>",
-                    "<td>".number_format($product['total'], 2, ",", "&nbsp;")."&nbsp;€</td>",
+                    "<td><a class='mx-2' href='traitement.php?order=inc&index=$index'>+</a>".$product['qtt']."<a class='mx-2' href='traitement.php?order=dec&index=$index'>-</a></td>",
+                    "<td>".number_format($product['total']*$product['qtt'], 2, ",", "&nbsp;")."&nbsp;€</td>",
                     "<td><a href='traitement.php?order=remove&index=$index' class='bi bi-trash btn btn-outline' data-bs-toggle='tooltip' data-bs-placement='right' title='Supprimer'></a></td>",
                     
                 "</tr>";
-            $totalGeneral+= $product['total'];
+            $totalGeneral+= $product['total']*$product['qtt'];
         }
         echo "<tr>",
                 "<td colspan=4>Total général : </td>",
