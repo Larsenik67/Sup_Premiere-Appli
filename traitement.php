@@ -1,5 +1,8 @@
 <?php
+
     session_start();
+
+    require_once "function.php";
 
     if(isset($_POST['submit'])){
 
@@ -30,6 +33,27 @@
 
     }
 
-    header("Location:index.php");
+    if(isset($_GET['order']) && $_GET['order'] == "remove"){
+        del();
+        header("location:recap.php");
+    }
+
+    if(isset($_GET['order']) && $_GET['order'] == "delall"){
+        delall();
+        $_SESSION["msg-produit"] = "Produit(s) supprimé";
+        $_SESSION["msg-type"] = "success";
+        header("location:index.php");
+    }
+
+    if(isset($_GET['order']) && $_GET['order'] == "inc"){
+        inc();
+        header("location:recap.php");
+    }
+
+    if(isset($_GET['order']) && $_GET['order'] == "dec"){
+        dec();
+        header("location:recap.php");
+    }
+    
 
 ?>

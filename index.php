@@ -39,7 +39,12 @@
                 <?php 
                 
     session_start();
-    echo "Il y'a ".count($_SESSION['products'])." produit(s) d'ajouté";
+
+    if(isset($_SESSION['products'])){
+
+        echo "Il y'a ".count($_SESSION['products'])." produit(s) d'ajouté";
+
+    }
 
     ?>
             </div>
